@@ -1,0 +1,41 @@
+.drag-in-progress .drop-target-placeholder {
+    border: 1px dotted #ababab;
+    background-color: #ffffaa;
+    min-height: 36px;
+    min-width: 36px;
+    max-width: 100%;
+    vertical-align: middle;
+    display: block;
+}
+
+.drag-in-progress .drop-target-placeholder.button,
+.drag-in-progress .drop-target-placeholder.text,
+.drag-in-progress .drop-target-placeholder.input {
+    display: inline-block;
+}
+
+.overlay-body {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    cursor: pointer;
+}
+
+html, body, body > div {
+    height: 100%;
+    overflow: hidden;
+}
+
+body > div div {
+    border: 1px dashed #d7d7d7;
+    margin: 2px;
+    padding: 2px;
+    min-height: 40px;
+}
+
+button, input, span {
+    margin: 2px;
+}
